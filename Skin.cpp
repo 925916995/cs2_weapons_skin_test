@@ -315,7 +315,7 @@ CON_COMMAND_F(skin, "Give Skin", FCVAR_CLIENT_CAN_EXECUTE)
     pPlayerWeapon->m_AttributeManager().m_Item().m_iAccountID() = 271098320;
 
     META_CONPRINTF("called by %lld\n", steamid);
-    sprintf(buf, " \7[1TAP]\1  \x04 %s Si-a ales skinul cu ID-ul: %d cu succes!", pPlayerController->m_iszPlayerName(), g_PlayerSkins[steamid][weaponId].m_nFallbackPaintKit);
+    sprintf(buf, " \7[1TAP]\1  \x04 Ti-ai ales skinul cu ID-ul: %d cu succes!", g_PlayerSkins[steamid][weaponId].m_nFallbackPaintKit);
     FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 }
 
@@ -452,7 +452,7 @@ CON_COMMAND_F(knife, "Gives the player a knife", FCVAR_CLIENT_CAN_EXECUTE)
         return;
     }
 
-    sprintf(buf, " \x04 %s has been given a %s knife!", pPlayerController->m_iszPlayerName(), args.Arg(1));
+    sprintf(buf, " \x02[1TAP] \x01 Ai primit cutitul %s !", args.Arg(1));
     FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 }
 
