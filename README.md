@@ -1,4 +1,5 @@
-# CSGO2 Server Preview Paint Demo Plugins
+# CSGO2 cs2 皮肤插件（测试）汉化版本
 
-this demo plugin,Please use with caution
-No support provided for this plugin
+这个演示插件，请谨慎使用
+
+未提供对此插件的支持
