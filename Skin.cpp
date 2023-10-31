@@ -273,13 +273,13 @@ CON_COMMAND_F(skin, "Give Skin", FCVAR_CLIENT_CAN_EXECUTE)
 		sprintf(buf, "-------------------------------------------------");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02 [1TAP] \x01 Foloseste comanda \x06skin <skin_id> \x01in CONSOLA!");
+		sprintf(buf, " \x02 [Zero社区] \x01 在控制台中使用 \x06skin <skin_id> \x01 的指令！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02[1TAP] \x01 Pentru a gasi \x06skin_id \x01poti folosi site-ul \x06 csgostash.com !");
+		sprintf(buf, " \x02[Zero社区] \x01 要查找 \x06skin_id \x01 你可以使用 \x06 http://skin.fu.link！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02 [1TAP] \x01 Mai multe detalii pe \x06 discord.gg/1tap!");
+		sprintf(buf, " \x02 [Zero社区] \x01 更多信息请查看 \x06 www.mon1ster.top！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
 		sprintf(buf, "-------------------------------------------------");
@@ -314,8 +314,8 @@ CON_COMMAND_F(skin, "Give Skin", FCVAR_CLIENT_CAN_EXECUTE)
     FnGiveNamedItem(pPlayerPawn->m_pItemServices(), weapon_name->second.c_str(), nullptr, nullptr, nullptr, nullptr);
     pPlayerWeapon->m_AttributeManager().m_Item().m_iAccountID() = 271098320;
 
-    META_CONPRINTF("called by %lld\n", steamid);
-    sprintf(buf, " \7[1TAP]\1  \x04 Ti-ai ales skinul cu ID-ul: %d cu succes!", g_PlayerSkins[steamid][weaponId].m_nFallbackPaintKit);
+    META_CONPRINTF("由 %lld 调用\n", steamid);
+    sprintf(buf, " \7[Zero社区]\1  \x04 您已成功选择 ID为: %d 的皮肤！", g_PlayerSkins[steamid][weaponId].m_nFallbackPaintKit);
     FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 }
 
@@ -333,13 +333,13 @@ CON_COMMAND_F(knife, "Gives the player a knife", FCVAR_CLIENT_CAN_EXECUTE)
 		sprintf(buf, "-------------------------------------------------");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02 [1TAP] \x01 Foloseste comanda \x06knife <name> \x01in CONSOLA!");
+		sprintf(buf, " \x02 [Zero社区] \x01 在控制台中使用 \x06knife <name> \x01 的指令！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02[1TAP] \x01Variantele de nume acceptate sunt \x06karambit, bayonet, css, m9, bowie, butterfly, flip, push, huntsman, falchion, gut, ursus, navaja, stiletto, talon, paracord, survival, nomad !");
+		sprintf(buf, " \x02[Zero社区] \x01 可使用的刀的名字如下： \x06karambit(爪子刀), bayonet(刺刀), css(海豹短刀), m9, bowie(鲍伊猎刀), butterfly(蝴蝶刀), flip(折叠刀), push(暗影双匕), tactical(猎杀者匕首), falchion(弯刀), gut(穿肠刀), ursus(熊刀), navaja(折刀), stiletto(短剑), talon(锯齿爪刀), paracord(系绳匕首), survival(求生匕首), nomad(流浪者匕首), skeleton(骷髅匕首) !");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02 [1TAP] \x01 Mai multe detalii pe \x06 discord.gg/1tap!");
+		sprintf(buf, " \x02 [Zero社区] \x01 更多信息请查看 \x06 www.mon1ster.top！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
 		sprintf(buf, "-------------------------------------------------");
@@ -447,12 +447,12 @@ CON_COMMAND_F(knife, "Gives the player a knife", FCVAR_CLIENT_CAN_EXECUTE)
     }
     else
     {
-        sprintf(buf, " \x04 %s Invalid knife type specified!", pPlayerController->m_iszPlayerName());
+        sprintf(buf, " \x04 %s 指定的刀具类型无效！", pPlayerController->m_iszPlayerName());
         FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
         return;
     }
 
-    sprintf(buf, " \x02[1TAP] \x01 Ai primit cutitul %s !", args.Arg(1));
+    sprintf(buf, " \x02[Zero社区] \x01 发刀成功 %s !", args.Arg(1));
     FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 }
 
@@ -473,25 +473,25 @@ const char* Skin::GetDate()
 
 const char* Skin::GetLogTag()
 {
-	return "skin";
+	return "皮肤";
 }
 
 const char* Skin::GetAuthor()
 {
-	return "Krazy";
+	return "Zero";
 }
 
 const char* Skin::GetDescription()
 {
-	return "Weapon skin plugin";
+	return "武器皮肤插件";
 }
 
 const char* Skin::GetName()
 {
-	return "Weapon skin plugin";
+	return "武器皮肤插件";
 }
 
 const char* Skin::GetURL()
 {
-	return "http://cs2.wssr.top";
+	return "http://www.mon1ster.top";
 }
