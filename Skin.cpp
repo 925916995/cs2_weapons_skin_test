@@ -336,7 +336,13 @@ CON_COMMAND_F(knife, "Gives the player a knife", FCVAR_CLIENT_CAN_EXECUTE)
 		sprintf(buf, " \x02 [Zero社区] \x01 在控制台中使用 \x06knife <name> \x01 的指令！");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
-		sprintf(buf, " \x02[Zero社区] \x01 可使用的刀的名字如下： \x06karambit(爪子刀), bayonet(刺刀), css(海豹短刀), m9, bowie(鲍伊猎刀), butterfly(蝴蝶刀), flip(折叠刀), push(暗影双匕), tactical(猎杀者匕首), falchion(弯刀), gut(穿肠刀), ursus(熊刀), navaja(折刀), stiletto(短剑), talon(锯齿爪刀), paracord(系绳匕首), survival(求生匕首), nomad(流浪者匕首), skeleton(骷髅匕首) !");
+		sprintf(buf, " \x02[Zero社区] \x01 可使用的刀的名字如下： \x06karambit(爪子刀), bayonet(刺刀), css(海豹短刀), m9, bowie(鲍伊猎刀), butterfly(蝴蝶刀) !");
+		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
+	    
+	        sprintf(buf, " \x02[Zero社区] \x01 可使用的刀的名字如下： \x06flip(折叠刀), push(暗影双匕), tactical(猎杀者匕首), falchion(弯刀), gut(穿肠刀), ursus(熊刀), navaja(折刀)!");
+		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
+
+	        sprintf(buf, " \x02[Zero社区] \x01 可使用的刀的名字如下： \x06stiletto(短剑), talon(锯齿爪刀), paracord(系绳匕首), survival(求生匕首), nomad(流浪者匕首), skeleton(骷髅匕首) !");
 		FnUTIL_ClientPrint(pPlayerController, 3, buf, nullptr, nullptr, nullptr, nullptr);
 
 		sprintf(buf, " \x02 [Zero社区] \x01 更多信息请查看 \x06 www.mon1ster.top！");
